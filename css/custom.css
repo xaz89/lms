@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+.bg1 {
+  background-color: #0b303b;
+}
+
+.bg2 {
+  background-color: #0a86a4;
+}
+
+.bg3 {
+  background-color: #00b5e1;
+}
+
+.txt-white {
+  color: #fff;
+}
+
+.bottom {
+  position: absolute;
+right: 10%;
+bottom: -5%;
+left: auto;
+z-index: 10;
+color: #fff;
+
+}
+
+.bottom1 {
+  position: absolute;
+right: 0;
+bottom: 50%;
+left: 0;
+z-index: 10;
+color: #fff;
+
+}
+
+.Bloque {
+  border-bottom: 1px solid black;
+}
+
+.Bloque01 {
+  min-height: 0%;
+}
+
+.Bloque02 {
+  min-height: 90%;
+  background-size: auto;
+  background-image: url('../img/fondo1.png');
+  background-position: center 0;
+  background-attachment: fixed;
+}
+
+.Bloque03 {
+  min-height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.Bloque03 p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.Bloque03 h3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.Bloque04 {
+  min-height: 100%;
+  background-size: auto;
+  background-image: url('../img/fondo2.png');
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.Bloque05 {
+  min-height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+
+.w-10 {
+  width: 10%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+
+.mt--5 {
+  margin-top: -5rem;
+}
+
+.mt--6 {
+  margin-top: -6rem;
+}
+
+.ml--15 {
+  margin-left: -15rem;
+}
+
+.pb--15 {
+  padding-bottom: -15rem;
+}
+
+.b--50 {
+  position: absolute;
+  bottom: 50%;
+  z-index: 10;
+  color: #fff;
+
+}
+
+
+.pt-40 {
+  padding-top: 40%;
+}
+
+.bg-dark {
+  background-color: #031217 !important;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+  .Bloque02 {
+
+    min-height: 100%;
+
+
+}
+
+.bottom {
+  display: none;
+}
+
+.b--50 {
+
+  position: absolute;
+  bottom: auto;
+  z-index: 10;
+  color: #fff;
+
+}
+  
+}
+
+
+
+
+/*# sourceMappingURL=custom.css.map */
+
+
+.preload-wrapper{
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #343690;
+  visibility: visible;
+  transition: 2s all;
+  opacity: 1;
+  
+
+ 
+
+}
+
+.preload-wrapper::-webkit-scrollbar { 
+  display: none; 
+}
+
+.preload-block{
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  border-top-color: #f01378;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  animation: 3s anim infinite linear;
+}
+
+.preload-wrapper.load{
+  visibility: hidden;
+  opacity: 0;
+}
+
+@keyframes anim{
+  from{
+    transform: translate(-50%, -50%) rotate(0deg);
+  } 
+  to{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
